@@ -3,8 +3,17 @@ import AprenderReact from "./componentes/AprenderReact"
 import AprenderJSX from "./componentes/AprenderJSX"
 import AprenderAderescos from "./componentes/AprenderAderecos"
 import AprenderEventos from "./componentes/AprenderEventos"
+import AprenderElevandoEstado from "./componentes/AprenderElevandoEstado"
+
+
+
+
 
 function App() {
+
+  const getStock = (data) => {
+    console.log(data)
+  }
 
   return (
     <>
@@ -13,8 +22,8 @@ function App() {
       {/* <AprenderReact /> */}
       {/* <AprenderJSX /> */}
       {/*<AprenderAderecos stock="ubuntu" />*/}
-      <AprenderEventos />
-      
+      {/*<AprenderEventos />*/}
+      <AprenderElevandoEstado getStock={getStock} />
 
     </>
   )
