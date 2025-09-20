@@ -10,18 +10,14 @@ export const AprenderGancho = () => {
 
   const gerarAleatorioNum = () => {
     const numero = Math.floor(Math.random() * 100)
-    setAleatorioNum(numero)
+    setAleatorioNum(numero);
   }
 
-  // Executa toda vez que "contar" muda
+  
   useEffect(() => {
-    console.log('O contador mudou para:', contar)
-  }, [contar])
+    console.log('O contador mudou para:');
+  }, [])
 
-  // Executa toda vez que "aleatorioNum" muda
-  useEffect(() => {
-    console.log('Novo número aleatório:', aleatorioNum)
-  }, [aleatorioNum])
 
   return (
     <>
